@@ -172,6 +172,11 @@ variable "enable_resource_consumption_export" {
   default     = true
 }
 
+variable "enable_multi_networking" {
+  description = "Whether to enable multi networking support. Will recreate the cluster."
+  default     = false
+  type        = bool
+}
 
 variable "network_tags" {
   description = "(Optional) - List of network tags applied to auto-provisioned node pools."
